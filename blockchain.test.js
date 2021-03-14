@@ -2,12 +2,12 @@ const Block = require("./block");
 const Blockchain = require("./blockchain");
 
 describe("Blockchain", () => {
-  const Blockchain = new Blockchain();
+  const blockchain = new Blockchain();
   it("contains a `chain` Array instance", () => {
-    expect(blockchain.chain instanceof Array).toEquals(true);
+    expect(blockchain.chain instanceof Array).toEqual(true);
   });
   it("starts with the genesis block", () => {
-    expect(blockchain.chain[0].toEquals(Block.genesis()));
+    expect(blockchain.chain[0]).toEqual(Block.genesis());
   });
 
   it("add a new blockchain to the block", () => {
