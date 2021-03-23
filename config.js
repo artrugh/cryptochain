@@ -9,4 +9,10 @@ const GENESIS_DATA = {
   data: [],
 };
 
-module.exports = { GENESIS_DATA, MINE_RATE };
+const CREDENTIALS = {
+  publishKey: process.env.PUBLISH_KEY,
+  subscribeKey: process.env.SUBSCRIBE_KEY,
+  secretKey: process.env.SECRET_KEY,
+};
+
+module.exports = { GENESIS_DATA, MINE_RATE, CREDENTIALS };
