@@ -15,4 +15,23 @@ const CREDENTIALS = {
   secretKey: process.env.SECRET_KEY,
 };
 
-module.exports = { GENESIS_DATA, MINE_RATE, CREDENTIALS };
+const CHANNELS = {
+  TEST: "TEST",
+  BLOCKCHAIN: "BLOCKCHAIN",
+  TRANSACTION: "TRANSACTION",
+};
+
+const STARTING_BALANCE = 1000;
+
+const REWARD_INPUT = { address: "*authorized-reward*" };
+const MININIG_REWARD = 50;
+
+module.exports = {
+  GENESIS_DATA,
+  MINE_RATE,
+  CREDENTIALS,
+  CHANNELS,
+  STARTING_BALANCE,
+  REWARD_INPUT,
+  MININIG_REWARD,
+};
